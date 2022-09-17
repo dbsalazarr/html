@@ -1,2 +1,2 @@
 # html
-Repo para subir el avance registrado en el curso de HTML de Platzi
+Repasando todo el contenido de HTML para poder verlo de manera más exacta
