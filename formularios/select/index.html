@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
 </head>
 <body>
     <h3>Tecnologías para Web</h3>
+    <!-- No es la forma recomendable de crear un select -->
     <select name="" id="">
         <option value="">Javascript</option>
         <option value="">HTML 5</option>
@@ -15,5 +16,15 @@
         <option value=""> Java </option>
         <option value=""> C </option>
     </select>
+    
+    <!-- Forma adecuada -->
+    <input list="cursos">
+    <datalist id="cursos">
+        <option value="Javascript"></option>
+        <option value="HTML 5"></option>
+        <option value="CSS 3"></option>
+        <option value="Java"></option>
+        <option value="C"></option>
+    </datalist>
 </body>
 </html>
