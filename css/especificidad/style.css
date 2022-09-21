@@ -17,10 +17,13 @@ a:visited{
 ul{
     list-style: none;    
 }
-
 html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font: normal 16px "Open Sans", sans-serif;
 }
 /*
     CABECERA
@@ -34,7 +37,7 @@ html{
 }
 /* Los selectores estan seleccionado el h1 */
 #page-title{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Raleway", Times, serif;
 }
 
 .title{
@@ -52,9 +55,22 @@ html{
 }
 .page-header nav ul{
     display: flex;
-    border: 1px solid #d0d;
     justify-content: space-between;
 }
 .page-header nav ul li a{
     font-weight: 700;
+    text-transform: uppercase;
+    background: #3f57e0;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    border-radius: 5px;
+}
+.page-header nav ul li:first-child a{
+    background: #e03faa;
+}
+.page-header nav ul li:nth-child(2) a{
+    background: coral;
+}
+.page-header nav ul li:last-child a{
+    background: #e03faa;
 }
