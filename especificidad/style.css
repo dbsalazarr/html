@@ -7,7 +7,13 @@
 *::before{
     box-sizing: inherit;
 }
-
+a{
+    color: #160F29;
+    text-decoration: none;
+}
+a:visited{
+    color: #368F8B;
+}
 ul{
     list-style: none;    
 }
@@ -48,4 +54,7 @@ html{
     display: flex;
     border: 1px solid #d0d;
     justify-content: space-between;
+}
+.page-header nav ul li a{
+    font-weight: 700;
 }
