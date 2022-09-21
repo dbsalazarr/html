@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos y Pseudo clases</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <div>  
+            <h2>Barra de Navegación</h2>
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item"><a href="#">Home</a></li>
+                <li class="main-menu__item"><a href="#">Cursos</a></li>
+                <li class="main-menu__item"><a href="#">Foro</a></li>
+                <li class="main-menu__item"><a href="#">Tus Rutas</a></li>
+                <li class="main-menu__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <style>
+                input:default {
+                    box-shadow: 0 0 2px 1px coral;
+                }
+
+                input:default + label {
+                    color: coral;
+                }
+            </style>
+            <form action="">
+                <div>
+                    <input type="radio" name="season" id="spring">
+                    <label for="spring">Spring</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="season" id="summer" checked>
+                    <label for="summer">Summer</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="season" id="fall">
+                    <label for="fall">Fall</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="season" id="winter">
+                    <label for="winter">Winter</label>
+                </div>
+
+                <input type="text" value="hola" placeholder="aprendiendo estilos">
+                <input type="checkbox" checked>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
