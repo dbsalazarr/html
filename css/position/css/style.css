@@ -2,7 +2,10 @@
     --blanco: #ffffff;
     --negro: #000000;
 
-    --color-primario: #F0EFF4;
+    --color-primario: #DA4167;
+    --color-secundario: #3D2645;
+
+    --color-font-title: #F0EFF4;
 
 }
 
@@ -24,16 +27,43 @@ body{
     background: rgba(0, 0, 0, .75);
 }
 section{
-    width: 400px;
-    margin: 1.5rem auto 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 section article{
     position: relative;
+    max-width: 400px;
     height: 100%;
     padding: 2rem;
 }
+section article::before,
+section article::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 208.333333%;
+    top: 0;
+    left:0;
+    background: var(--blanco);
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, .75);
+    border-radius: 1.5rem;
+    transform: rotateZ(0);
+    transition: transform .3s ease-in-out;
+    z-index: -3;
+}
+section article:hover::before{
+    transform: rotateZ(10deg);
+    z-index: -2;
+}
+section article:hover::after{
+    transform: rotateZ(20deg);
+}
 section article h2{
     background: var(--color-primario);
+    color: var(--color-font-title);
     display: inline;
     padding: 0 1.2rem;
     line-height: 3.9rem;
@@ -70,7 +100,8 @@ section article figure figcaption{
     position: absolute;
     right: 2rem;
     bottom: 2rem;
-    background: var(--blanco);
+    background: var(--color-primario);
+    color: var(--color-font-title);
     z-index: 2;
     text-align: center;
     padding: 1.2rem;
