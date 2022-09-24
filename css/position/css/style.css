@@ -25,12 +25,12 @@ html{
 body{   
     font: normal normal 1.6rem "Open Sans", sans-serif;
     background: rgba(0, 0, 0, .75);
-}
-section{
     display: grid;
     place-content: center;
-    height: 100vh;
+    height: calc(100vh - 250px);
     width: 100vw;
+}
+section{
 }
 section article{
     position: relative;
