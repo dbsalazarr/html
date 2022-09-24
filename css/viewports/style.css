@@ -1,0 +1,43 @@
+:root{
+    --blanco: #df0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 1rem is equal to 10px */
+}
+body{
+    background: #D1D5DE;
+    font: normal normal 16px "Open Sans", Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+
+section{
+    width: 80%;
+    margin: 2.5rem auto 0; 
+    display: flex;
+}
+
+section article:first-child{
+    background: #657153;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section article:last-child{
+    background: #837569;
+    width:50%;
+    align-self: center;
+    text-align: center;
+}
