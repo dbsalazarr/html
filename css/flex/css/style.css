@@ -1,0 +1,21 @@
+:root{
+    /*
+        Nada todavía
+    */
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font: normal normal 1.6rem "Open Sans", Arial, Helvetica, Sans-serif;
+}
